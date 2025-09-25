@@ -1,56 +1,13 @@
-import React, { useEffect, useState } from "react";
-import Button from "../Components/Button";
-import HeroLogo from "../assets/HeroLogo.png";
+  import Herosection from "../Components/Home/Herosection";
+  import WelcomeSection from "../Components/Home/WelcomeSection";
 
-const Home = () => {
-  const [pos, setPos] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const moveHandler = (e) => {
-      setPos({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener("mousemove", moveHandler);
-
-    return () => window.removeEventListener("mousemove", moveHandler);
-  }, []);
-
-  return (
-    <div className="relative md:w-7xl mx-auto">
-      {/* moving circle */}
-      <div
-        className="fixed w-[200px] h-[200px] rounded-full bg-yellow-400 opacity-30 blur-3xl pointer-events-none z-0 transition-all duration-150"
-        style={{
-          left: pos.x - 100,
-          top: pos.y - 100,
-        }}
-      ></div>
-
-      {/* main content */}
-      <div className="relative px-7 py-3 z-10 md:px-15 mx-auto gap-6 flex justify-between items-center md:flex-row flex-col mt-6">
-        {/* text content */}
-        <div className="flex flex-col gap-5">
-          <div className="h-[85px] md:w-[450px] md:h-[160px]">
-            <h1 className="font-inter font-bold text-2xl md:text-5xl md:leading-[3.5rem] text-black_1">
-              Kraut 9 is Europe's premier NFT-based marketing agency
-            </h1>
-          </div>
-          <div className="md:w-[280px] md:h-[47px] text-sm md:text-base text-[#27282AAB]">
-            <p>leading the way in revolutionizing marketing with NFTs</p>
-          </div>
-          <div>
-            <button className="py-2 md:py-2 px-5 text-white bg-gradient-to-r w-full md:w-[130px] from-[#F0F8FB] via-[#28C6F3] to-[#28C6F3] rounded-4xl font-bold font-inter tracking-tight text-base ">
-              Email
-            </button>
-          </div>
-        </div>
-
-        {/* image div */}
-        <div className="md:px-10">
-          <img src={HeroLogo} alt="Hero Logo" className="md:w-[380px] md:h-[380px]" />
-        </div>
+  const Home = () => {
+    return (
+      <div className=" max-w-7xl  mx-auto">
+        <Herosection />
+        <WelcomeSection/>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
-export default Home;
+  export default Home;

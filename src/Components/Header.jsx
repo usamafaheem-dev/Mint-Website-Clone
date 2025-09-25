@@ -26,7 +26,7 @@ const Header = () => {
     setShow(!show);
   };
   return (
-    <div className="relative  md:w-7xl mx-auto">
+    <div className="relative  max-w-7xl mx-auto">
       {/* mouse moment */}
       <div
         className="fixed w-[200px] h-[200px] rounded-full bg-yellow-400 opacity-30 blur-3xl pointer-events-none z-0 transition-all duration-150"
@@ -73,7 +73,7 @@ const Header = () => {
             onClick={handleClose}
             className="fixed w-screen bg-black/40 inset-0 z-40"
           ></div>
-          <div className="fixed top-0 left-0 z-50  w-screen  md:hidden flex  flex-col items-start gap-4 px-4 py-3  bg-re-400 font-inter tracking-tight text-base text-black_1 bg-white">
+          <div className="fixed top-0 left-0 z-50  w-screen  md:hidden flex  flex-col items-start gap-4 px-6 py-4   bg-re-400 font-inter tracking-tight text-base text-black_1 bg-white">
             <button onClick={handleClose} className="font-medium text-xl">
               X
             </button>
