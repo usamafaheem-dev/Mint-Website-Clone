@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="relative max-w-7xl  mx-auto">
       <div
-        className="fixed w-[200px] h-[200px] rounded-full bg-yellow-500 opacity-60 blur-2xl pointer-events-none z-0 transition-all duration-150"
+        className="fixed md:w-[200px] md:h-[200px] rounded-full bg-yellow-500 opacity-30 blur-2xl pointer-events-none z-0 transition-all duration-150"
         style={{
           left: pos.x - 100,
           top: pos.y - 100,
