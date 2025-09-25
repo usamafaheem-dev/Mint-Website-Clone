@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+/* 
+.bebas {
+  font-family: "Bebas Neue", sans-serif;
+} */
+
+@theme {
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-black_1: #27282a;
+  --spacing-desktop:12px 60px;
+}
+.padding{
+  padding: 12px 60px;
+}
+
+.mobile-padding{
+  padding: 12px 30px;
+}
+
+.active {
+  color: #28c6f3;
+}
