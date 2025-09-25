@@ -25,6 +25,7 @@ const Home = () => {
 
       <Herosection  />
       <WelcomeSection  />
+      
     </div>
   );
 };
