@@ -1,28 +1,9 @@
-import React, { useEffect, useState } from "react";
 import HeroLogo from "../../assets/HeroLogo.png";
 
 const Herosection = () => {
-  const [pos, setPos] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const moveHandler = (e) => {
-      setPos({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener("mousemove", moveHandler);
-
-    return () => window.removeEventListener("mousemove", moveHandler);
-  }, []);
-
   return (
     <div className="relative ">
       {/* moving circle */}
-      <div
-        className="fixed w-[200px] h-[200px] rounded-full bg-yellow-400 opacity-30 blur-3xl pointer-events-none z-0 transition-all duration-150"
-        style={{
-          left: pos.x - 100,
-          top: pos.y - 100,
-        }}
-      ></div>
 
       {/* main content */}
       <div className="relative px-7 py-3 z-10 md:px-16 mx-auto gap-6 flex justify-between items-center md:flex-row flex-col mt-6">
