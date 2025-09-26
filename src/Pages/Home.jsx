@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Herosection from "../Components/Home/Herosection";
 import WelcomeSection from "../Components/Home/WelcomeSection";
+import Missions from "../Components/Missions";
 
 const Home = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -8,6 +9,7 @@ const Home = () => {
  useEffect(() => {
     const moveHandler = (e) => {
       setPos({ x: e.clientX, y: e.clientY });
+      
     };
     window.addEventListener("mousemove", moveHandler);
 
@@ -25,6 +27,7 @@ const Home = () => {
 
       <Herosection  />
       <WelcomeSection  />
+      <Missions/>
       
     </div>
   );

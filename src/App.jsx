@@ -6,6 +6,7 @@ import Team from "./Pages/Team";
 import NotFound from "./Pages/NotFound";
 import Layout from "./Pages/Layout";
 import Home from "./Pages/Home";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -15,7 +16,7 @@ const App = () => {
       children: [
         {
           path: "/",
-          element: <Home/>,
+          element: <Home />,
         },
         {
           path: "/collection",
