@@ -9,9 +9,7 @@ import ButtonMobile from "./ButtonMobile";
 
 const Footer = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
-  const hanletry = () => {
-    console.log("i am running");
-  };
+
   // use effect for bacgkound cursor moment color
   useEffect(() => {
     const handleMove = (e) => {
@@ -48,7 +46,7 @@ const Footer = () => {
       ></div>
 
       {/* main content */}
-      <div className="relative z-10 grid gap-6 grid-cols-1 md:grid-cols-3  md:items-end  px-7 py-14 md:px-15  ">
+      <div className="relative z-10 grid gap-6 grid-cols-1 md:grid-cols-3  md:items-end  mb-4 px-7 mt-12 md:px-15  ">
         {/* navlinks */}
 
         <div className="order-2 md:order-1 gap-7 md:gap-3  flex justify-center md:justify-start items-center ">

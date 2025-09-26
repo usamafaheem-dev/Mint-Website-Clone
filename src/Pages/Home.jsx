@@ -3,6 +3,7 @@ import Herosection from "../Components/Home/Herosection";
 import WelcomeSection from "../Components/Home/WelcomeSection";
 import Missions from "../Components/Missions";
 
+
 const Home = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
