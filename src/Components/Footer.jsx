@@ -46,10 +46,10 @@ const Footer = () => {
       ></div>
 
       {/* main content */}
-      <div className="relative z-10 grid gap-6 grid-cols-1 md:grid-cols-3  md:items-end  mb-4 px-7 mt-12 md:px-15  ">
+      <div className="relative z-10 grid gap-6 grid-cols-1 lg:grid-cols-3  md:items-end  mb-4 px-6 mt-12 md:px-15  ">
         {/* navlinks */}
 
-        <div className="order-2 md:order-1 gap-7 md:gap-3  flex justify-center md:justify-start items-center ">
+        <div className="order-2 lg:order-1 gap-7 md:gap-3  flex justify-center lg:justify-start items-center ">
           {mediaLinks.map((value, index) => (
             <div
               key={index}
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="grid order-1 md:order-2 grid-cols-1 gap-5 md:gap-9">
+        <div className="grid order-1 lg:order-2 grid-cols-1 gap-5 md:gap-9">
           <div className="flex justify-center items-center ">
             <NavLink to="/">
               {" "}
@@ -74,14 +74,14 @@ const Footer = () => {
             <NavLink to="team">Team</NavLink>
           </div>
         </div>
-        <div className="order-3 md:order-2 flex justify-end items-center">
+        <div className="order-3 lg:order-2 flex  justify-center lg:justify-end items-center">
           <button
             className="py-3 px-4 md:px-9 
                text-white bg-gradient-to-r 
                from-[#F0F8FB] via-[#28C6F3] to-[#28C6F3] 
                rounded-4xl font-semibold md:font-bold font-inter  
                text-[11px] tracking-wide 
-               w-full md:w-[110px]"
+               w-full sm:w-[260px] lg:w-[110px]"
           >
             MINT
           </button>

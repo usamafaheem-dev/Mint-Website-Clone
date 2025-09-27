@@ -8,7 +8,7 @@ const Box = ({ title, content, icon, iconSize = {}, hiddenOnMobile }) => {
     <div
       className={`${
         hiddenOnMobile ? "hidden md:flex" : "flex"
-      } flex-col gap-3 md:gap-4 p-4 md:p-8 md:w-[565px] rounded-2xl border-1 border-[#FFCB00] justify-center`}
+      } flex-col  gap-3 md:gap-4 p-4 md:p-8 xl:w-[565px] rounded-2xl border-1 border-[#FFCB00] justify-center`}
     >
       <div
         className={`bg-[#27282a] flex justify-center items-center rounded-full `}
@@ -26,8 +26,8 @@ const Box = ({ title, content, icon, iconSize = {}, hiddenOnMobile }) => {
           }}
         />
       </div>
-      <h1 className="font-bold text-[13px] md:text-2xl">{title}</h1>
-      <div className="text-[10px] md:text-[15px] flex flex-col gap-5">
+      <h1 className="font-bold text-[13px] sm:text-base xl:text-2xl">{title}</h1>
+      <div className="text-[10px] md:text-[12px] text-justify xl:text-left xl:text-[15px] flex flex-col gap-3">
         {content.map((text, i) => (
           <p key={i}>{text}</p>
         ))}

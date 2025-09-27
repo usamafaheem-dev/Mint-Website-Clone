@@ -36,15 +36,15 @@ const Header = () => {
         }}
       ></div>
       {/* main content */}
-      <div className="relative z-10 grid grid-cols-3 items-center px-7 py-3 md:px-15  ">
+      <div className="relative z-10 grid grid-cols-3 items-center px-6 py-3 md:px-15  ">
         {/* for desktop */}
         {/* navlinks */}
-        <div className=" md:hidden flex ">
+        <div className=" lg:hidden flex ">
           <button onClick={handleShow}>
             <IoMenuSharp className="h-[25px] w-[25px]" />
           </button>
         </div>
-        <div className="hidden md:flex   gap-5  bg-re-400 font-inter tracking-tight text-base text-black_1">
+        <div className="hidden lg:flex   gap-5  bg-re-400 font-inter tracking-tight text-base text-black_1">
           <NavLink to="collection">Collections</NavLink>
           <NavLink to="use-casses">Use Cases</NavLink>
           <NavLink to="team">Team</NavLink>

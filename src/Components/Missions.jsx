@@ -4,21 +4,21 @@ import ButtonMobile from "./ButtonMobile";
 
 const Missions = () => {
   return (
-    <div className="relative z-10 px-7 py-3      md:px-15">
+    <div className="relative z-10 px-8 py-3      sm:px-15">
       {/* content */}
-      <div className="flex md:justify-between md:flex-row flex-col gap-5 md:gap-0">
-        <div className="md:max-w-[490px] order-1  flex flex-col gap-7 font-inter">
-          <h1 className="font-bold text-xl md:text-4xl text-black_1">
+      <div className="flex sm:justify-between sm:flex-row flex-col gap-2 md:gap-0">
+        <div className="sm:w-[340px] bg-rd-500 md:w-[390px] order-1  flex flex-col gap-7 sm:gap-5 font-inter">
+          <h1 className="font-bold text-xl sm:text-2xl md:text-2xl lg:text-4xl  text-black_1">
             Our Mission
           </h1>
-          <button className=" hidden md:block py-2 md:py-2 px-5 text-white bg-gradient-to-r w-full md:w-[130px] from-[#F0F8FB] via-[#28C6F3] to-[#28C6F3] rounded-4xl font-bold font-inter tracking-tight text-base ">
-            CAT
+          <button className=" hidden sm:block py-2 sm:py-2 px-5 text-white bg-gradient-to-r w-full sm:w-[110px] md:w-[120px] lg:w-[130px] from-[#F0F8FB] via-[#28C6F3] to-[#28C6F3] rounded-4xl font-bold font-inter tracking-tight text-base ">
+            CTA
           </button>
         </div>
-        <div className="order-3 md:order-2  block md:hidden">
-          <ButtonMobile>CAT</ButtonMobile>
+        <div className="order-3 sm:order-2 mt-4 block sm:hidden">
+          <ButtonMobile>CTA</ButtonMobile>
       </div>
-        <div className="order-2 md:order-3 md:max-w-[600px] text-justif text-[13px] text-black_1 font-inter md:text-base flex flex-col gap-3 md:gap-5">
+        <div className="order-2 bg-geen-500 sm:order-3  sm:w-[595px]   md:text-[15px] text-[11px]   text-black_1 font-inter  flex  flex-col gap-3 md:gap-5">
           <p>
             Kraut 9's mission is to revolutionize classical industries and drive
             unparalleled growth by harnessing the power of Non-Fungible Tokens.

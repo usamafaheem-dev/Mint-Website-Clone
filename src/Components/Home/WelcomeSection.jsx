@@ -63,18 +63,18 @@ const boxColumn2 = [
 
 const WelcomeSection = () => {
   return (
-    <div className="relative z-10 px-7 py-7 md:py-16 md:px-15">
+    <div className="relative z-10 px-6 py-7 md:py-16 md:px-15">
       {/* content */}
-      <div className="flex md:justify-between md:flex-row flex-col gap-3 md:gap-0">
-        <div className="md:max-w-[490px] flex flex-col gap-3 font-inter">
-          <h1 className="font-bold text-xl md:text-4xl text-black_1">
+      <div className="flex md:justify-between sm:flex-row flex-col gap-3 sm:gap-6 xl:gap-0">
+        <div className="md:w-[490px] sm:w-[250px] flex flex-col gap-3 font-inter">
+          <h1 className="font-bold text-xl sm:text-lg md:text-2xl lg:text-4xl text-black_1">
             Welcome to KRAUT9
           </h1>
-          <p className="text-black_1 text-justify text-[12px] md:text-base">
+          <p className="text-black_1 text-justify text-[12px]  lg:text-base">
             We offer a thrilling journey for businesses to expand their audience, monetize their fanbase, and embrace the cutting-edge world of web3 technology.
           </p>
         </div>
-        <div className="md:max-w-[600px] text-justify text-[13px] text-black_1 font-inter md:text-base flex flex-col gap-3 md:gap-5">
+        <div className="md:w-[600px] sm:w-[500px] text-justify text-[13px] text-black_1 font-inter xl:text-base flex flex-col gap-3 md:gap-5">
           <p>
             With over 20 years of experience each, our expert team empowers businesses to tap into the dynamic potential of non-fungible tokens, transforming products and ideas into coveted digital assets. Kraut 9 shapes the future by combining digital art, blockchain technology, and marketing expertise to create immersive experiences for brands.
           </p>
@@ -85,8 +85,8 @@ const WelcomeSection = () => {
       </div>
 
       {/* boxes */}
-      <div className="py-7 md:py-12 font-inter text-black_1 md:flex justify-between">
-        <div className="flex flex-col gap-4 mb-3">
+      <div className="py-7 md:py-12 font-inter text-black_1 md:flex justify-between gap-2 xl:gap-0">
+        <div className="flex flex-col gap-3 mb-3">
           {boxColumn1.map((box, i) => (
             <Box
               key={i}
@@ -97,7 +97,7 @@ const WelcomeSection = () => {
             />
           ))}
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3">
           {boxColumn2.map((box, i) => (
             <Box
               key={i}
